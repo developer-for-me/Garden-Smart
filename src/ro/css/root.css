@@ -1,0 +1,33 @@
+.root{
+    -fx-background-color: #6A685E;
+    -fx-background-radius: 360;
+    -fx-border-radius: 360;
+}
+.button-grey{
+    -fx-background-color: #77828C;
+    -fx-background-radius: 360;
+    -fx-animated: true;
+    -fx-text-fill: #C4C3C6;
+    -fx-font-size: 22;
+
+
+}
+.text-field{
+    -fx-font-family:"Ink Free","Ink Free","Ink Free";
+    -fx-font-size: 34;
+    /*-fx-font-style: oblique;*/
+    -fx-border-color: #95f875;
+    -fx-border-radius: 360;
+    -fx-pref-width: 164;
+}
+.text-field-title{
+    -fx-font-family: "Ink Free";
+    -fx-font-size: 58;
+}
+.button-close{
+    -fx-background-radius: 360;
+    -fx-border-radius: 360;
+    -fx-background-color: #623933;
+    -fx-text-fill: #877041;
+    -fx-font-size: 30;
+}
