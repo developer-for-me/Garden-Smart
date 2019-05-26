@@ -7,7 +7,7 @@ import ro.main.Main;
 
 
 public class Controller {
-    static final String EXCEPRION = "Este o exceptie";
+    static final String EXCEPTION = "Este o exceptie";
     Main main = new Main();
     @FXML
     private Button porumb;
@@ -31,7 +31,15 @@ public class Controller {
         try {
             main.parcelaRosi();
         }catch (Exception e){
-            System.out.println(EXCEPRION);
+            System.out.println(EXCEPTION);
+        }
+    }
+    @FXML
+    public void setGradina(){
+        try {
+            main.gradina();
+        } catch (Exception e) {
+            System.out.println(EXCEPTION);
         }
     }
     @FXML
@@ -39,7 +47,7 @@ public class Controller {
         try {
             main.parcelaPorumb();
         }catch (Exception e){
-            System.out.println(EXCEPRION);
+            System.out.println(EXCEPTION);
         }
     }
     @FXML
@@ -47,7 +55,7 @@ public class Controller {
         try {
             main.parcelaCartofi();
         }catch (Exception e){
-            System.out.println(EXCEPRION);
+            System.out.println(EXCEPTION);
         }
     }
 }

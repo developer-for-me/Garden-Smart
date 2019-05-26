@@ -9,23 +9,27 @@ import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import ro.abstractPerson.Person;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        primaryStage = new Stage();
+        Parent startRoot = FXMLLoader.load(Main.class.getResource("/ro/interfaces/Login.fxml"));
+        primaryStage.setTitle("Login");
+        setStage(primaryStage,startRoot);
+    }
+    public void gradina() throws Exception{
+        Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(Main.class.getResource("/ro/interfaces/Home.fxml"));
         primaryStage.setTitle("Main");
-
-
         setStage(primaryStage,root);
     }
     public void parcelaRosi() throws Exception{
         Stage rosii = new Stage();
         Parent rosiiWin = FXMLLoader.load(Main.class.getResource("/ro/interfaces/Rosii.fxml"));
         rosii.setTitle("Rosii");
-
-
         setStage(rosii, rosiiWin);
     }
     public void parcelaPorumb()throws Exception{
@@ -60,6 +64,10 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+        Person person = new Person("Nechiforel david ","197080900800");
+        Person person1 = new Person("Nechiforel david ","197080900800");
+
+        System.out.println(person.compareTo(person1));
         launch(args);
     }
 }

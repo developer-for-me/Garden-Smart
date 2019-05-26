@@ -1,0 +1,30 @@
+.root{
+    -fx-background-color: rgba(0, 0, 0,0.7);
+    -fx-border-color:rgba(100,200,4,0.2);
+
+}
+.label-login{
+    -fx-text-fill: white;
+    -fx-font-size: 42;
+    -fx-alignment: top-center;
+}
+.label-UserName{
+    -fx-text-fill: white;
+    -fx-font-size: 23;
+}
+.separator{
+}
+.button-Check{
+    -fx-border-radius: 360;
+    -fx-background-radius: 360;
+    -fx-background-color: #95f875;
+}
+.button-X{
+    -fx-background-color: #77828C;
+    -fx-text-fill: red;
+    -fx-background-radius: 360;
+}
+.label-Error{
+    -fx-text-fill: red;
+    -fx-font-size: 16;
+}

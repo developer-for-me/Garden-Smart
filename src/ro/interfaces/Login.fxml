@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="468.0" prefWidth="379.0" styleClass="root" stylesheets="@../css/Login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.control.Login">
+   <children>
+      <Label layoutX="128.0" layoutY="79.0" styleClass="label-login" stylesheets="@../css/Login.css" text="LOGIN" />
+      <Label layoutX="26.0" layoutY="194.0" styleClass="label-UserName" text="User name" />
+      <Label layoutX="32.0" layoutY="283.0" styleClass="label-UserName" text="Password" />
+      <TextField fx:id="textUser" layoutX="147.0" layoutY="197.0" AnchorPane.leftAnchor="146.0" AnchorPane.rightAnchor="39.0" />
+      <Separator layoutX="74.0" layoutY="152.0" prefHeight="18.0" prefWidth="232.0" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="73.0" />
+      <Separator layoutX="18.0" layoutY="251.0" prefHeight="18.0" prefWidth="348.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="16.0" />
+      <Button fx:id="check" layoutX="251.0" layoutY="393.0" mnemonicParsing="false" onAction="#checkHome" styleClass="button-Check" text="CHECK" />
+      <Button fx:id="check1" layoutX="333.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" styleClass="button-X" text="X" />
+      <PasswordField fx:id="password" layoutX="149.0" layoutY="285.0" prefHeight="31.0" prefWidth="191.0" AnchorPane.leftAnchor="146.0" AnchorPane.rightAnchor="39.0" />
+      <Label fx:id="errors" layoutX="38.0" layoutY="345.0" prefHeight="25.0" prefWidth="304.0" styleClass="label-Error" />
+   </children>
+</AnchorPane>
