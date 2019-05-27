@@ -67,7 +67,6 @@ public class Main extends Application {
         Person person = new Person("Nechiforel david ","197080900800");
         Person person1 = new Person("Nechiforel david ","197080900800");
 
-        System.out.println(person.compareTo(person1));
         launch(args);
     }
 }

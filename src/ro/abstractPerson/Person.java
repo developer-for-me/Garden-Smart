@@ -13,8 +13,6 @@ public class Person {
         this.cnp = cnp;
     }
 
-    public String compareTo(Person o) {
-        return (this.name!= o.name)?"NU este":"Este egal";
-    }
+
 }
 
