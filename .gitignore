@@ -1,3 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 GreenGarden.iml
+BuildProperties.txt
+Install.txt
+Readme.txt
+ReleaseNotes.txt
+RXTXcomm.jar
+rxtxSerial.dll
+rxtxParallel.dll

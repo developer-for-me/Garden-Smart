@@ -6,7 +6,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="468.0" prefWidth="379.0" styleClass="root" stylesheets="@../css/Login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.control.Login">
    <children>
       <Label layoutX="128.0" layoutY="79.0" styleClass="label-login" stylesheets="@../css/Login.css" text="LOGIN" />

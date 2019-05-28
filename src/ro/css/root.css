@@ -2,6 +2,7 @@
     -fx-background-color: #6A685E;
     -fx-background-radius: 360;
     -fx-border-radius: 360;
+
 }
 .button-grey{
     -fx-background-color: #77828C;
@@ -30,4 +31,7 @@
     -fx-background-color: #623933;
     -fx-text-fill: #877041;
     -fx-font-size: 30;
+}
+.root-1{
+    -fx-background-color: #877041;
 }

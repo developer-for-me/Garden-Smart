@@ -28,3 +28,9 @@
     -fx-text-fill: red;
     -fx-font-size: 16;
 }
+.label-Save{
+    -fx-font-size: 45;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+
+}

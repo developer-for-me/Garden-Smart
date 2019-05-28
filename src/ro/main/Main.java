@@ -5,19 +5,33 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import ro.abstractPerson.Person;
+import ro.control.Controller;
+import ro.control.Login;
+
+import java.io.IOException;
 
 public class Main extends Application {
+    boolean result;
+    @FXML
+    private Button yesSave;
 
+    @FXML
+    private Button noSave;
+    Stage primarry ;
+    static  Stage p ;
     @Override
     public void start(Stage primaryStage) throws Exception{
         primaryStage = new Stage();
+        p=primaryStage;
         Parent startRoot = FXMLLoader.load(Main.class.getResource("/ro/interfaces/Login.fxml"));
         primaryStage.setTitle("Login");
+        primaryStage.setX(300);
         setStage(primaryStage,startRoot);
     }
     public void gradina() throws Exception{
@@ -45,12 +59,9 @@ public class Main extends Application {
         setStage(cartofi,cartofiWin);
     }
 
-
-
-
-
-    private void setStage(Stage stage, Parent parent) {
+    public void setStage(Stage stage, Parent parent) {
         Scene scene1 = new Scene(parent);
+        stage.initModality(Modality.APPLICATION_MODAL);
         stage.setMaxHeight(600);
         stage.setMaxWidth(600);
         stage.setMaximized(false);
@@ -60,12 +71,16 @@ public class Main extends Application {
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene1);
         stage.show();
+        p =stage;
+
+    }
+    public static void instantClose(){
+        p.close();
+
     }
 
 
     public static void main(String[] args) {
-        Person person = new Person("Nechiforel david ","197080900800");
-        Person person1 = new Person("Nechiforel david ","197080900800");
 
         launch(args);
     }
